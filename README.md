@@ -11,7 +11,7 @@ A full-stack school management system I designed, built, and deployed for **Seol
 | | |
 |---|---|
 | **Status** | Live in production since September 2026 |
-| **Users** | 460+ students, 280+ parents, 53 teachers, 4 administrators (as of October 2026) |
+| **Users** | 500+ students, 300+ parents, 53 teachers, 4 administrators (as of October 2026) |
 | **Target scale** | Full enrollment of 600+ students and 300+ parents |
 | **My role** | Sole full-stack developer: development, design, deployment, and maintenance |
 
