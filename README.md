@@ -48,8 +48,8 @@ Each user has its own portal and can only see and do what their role allows.
 - Handles end-of-session student promotions
 
 **Teacher**
-- Subject Teachers: Create assessments, record student scores, and manage results for their assigned subjects and classes.
-- Class Teachers: Generate report, manage attendance, student ratings, add comments and review report cards for students in their assigned class.
+- Subject Teacher: Creates assessments, records student scores, and manages results for their assigned subjects and classes.
+- Class Teacher: Generates report, manages attendance, student ratings, add comments and reviews report cards for students in their assigned class.
 
 **Parent**
 - Views their children's academic records, assessments, and report cards
@@ -60,11 +60,11 @@ Each user has its own portal and can only see and do what their role allows.
 
 The system stores sensitive information about students, teachers and parents, so protecting it was a core design priority:
 
-- **Role-based access control:** every page and API route checks the user's role, so users can only access data they are authorized to see (e.g, subject teachers can only manage assessments and results for subjects and classes assigned to them).
-- **Secure authentication:** uses JSON Web Tokens (JWTs) stored in HTTP-only cookies to prevent client-side JavaScript from directly accessing authentication tokens.
-- **Input validation:** validates submitted forms to prevent duplicate and invalid records of names, emails, Nigerian phone numbers, admission numbers, dates of birth, etc.
-- **Controlled corrections:** changes to finalized results go through super admin correction workflow rather than direct edits, protecting the integrity of academic records.
-- **Database Transactions:** uses MongoDB transactions for operations requiring multiple database changes, which helps to maintain data consistency.
+- **Role-based access control:** Every page and API route checks the user's role, so users can only access data they are authorized to see (e.g, subject teachers can only manage assessments and results for subjects and classes assigned to them).
+- **Secure authentication:** It uses JSON Web Tokens (JWTs) stored in HTTP-only cookies to prevent client-side JavaScript from directly accessing authentication tokens.
+- **Input validation:** Validates submitted forms to prevent duplicate and invalid records of names, emails, Nigerian phone numbers, admission numbers, dates of birth, etc.
+- **Controlled corrections:** Changes to finalized results go through super admin correction workflow rather than direct edits, protecting the integrity of academic records.
+- **Database Transactions:** It uses MongoDB transactions for operations requiring multiple database changes, which helps to maintain data consistency.
 
 These principles are also relevant to health information systems where protecting sensitive patient records requires strict access control, secure authentication, and data integrity.
 
