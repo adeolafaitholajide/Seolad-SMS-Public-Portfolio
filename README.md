@@ -84,8 +84,8 @@ These principles are also relevant to health information systems where protectin
 - **Designing user permissions:** making sure each role sees and performs only what it needs.
 - **Preparing for production:** full code review and cleanup before launch, including shared utilities and components to keep the codebase consistent and maintainable.
 - **Maintaining data integrity:** ensuring that published assessments, results and report cards are safe during corrections workflow.
-- **Building maintainable applications:** I learnt the importance of writing reusable components, separating business logic from controllers, and organizing code to make debugging, testing, and future maintenance easier.
-- **Designing systems around real-world usage:** I learnt how important it is to understand users' needs and existing workflows before implementing features, especially when different user roles depend on one another to complete tasks.
+- **Building a maintainable application:** I learnt the importance of writing reusable components, separating business logic from controllers, and organizing code to make debugging, testing, and future maintenance easier.
+- **Designing systems around real-life usage:** I learnt how important it is to understand users' needs and existing workflows before implementing features, especially when different user roles depend on one another to complete tasks.
 
 ---
 
